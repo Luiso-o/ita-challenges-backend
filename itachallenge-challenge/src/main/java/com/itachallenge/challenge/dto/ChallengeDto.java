@@ -15,7 +15,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @Builder
 @Getter
-public class ChallengeDto{
+@Setter
+public class ChallengeDto {
 
     @JsonProperty(value = "id_challenge", index = 0)
     private UUID challengeId;
@@ -48,7 +49,4 @@ public class ChallengeDto{
     @JsonProperty(index = 7)
     private List<UUID> solutions;
 
-    /*
-    TODO: ADD more fields "on demand" (when needed)
-     */
 }
